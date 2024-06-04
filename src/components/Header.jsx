@@ -7,6 +7,7 @@ import Burgermenu from "../../public/Image/Group 40.png";
 import star from "../../public/Image/Star 1.png";
 
 import { AiOutlineClose } from "react-icons/ai";
+import BgGrident from "./BgGrident";
 
 function Header() {
   const [navbar, setNavbar] = useState(false);
@@ -30,40 +31,72 @@ function Header() {
   }, [navbar]);
 
   return (
-  <>
-      <header className="sticky top-0 bg-[#F2F2F2] flex justify-between items-center p-5 pt-3">
-      <div className="flex items-center">
-        <Image src={logo} className="w-10" alt="logo" />
-        <div className="flex justify-center">
-          <Image src={logotext} className="w-16" alt="logo text" />
-          <p className="text-[6px] relative top-[3px] font-semibold">TM</p>
+    <>
+      <header className="sticky top-0 bg-[#F2F2F2] flex justify-between items-center p-10 rounded-t-3xl ">
+        <div className="flex justify-between w-full">
+          <div className="flex items-center  z-10">
+            <Image src={logo} className="w-10" alt="logo" />
+            <div className="flex justify-center">
+              <Image src={logotext} className="w-16" alt="logo text" />
+              <p className="text-[6px] relative top-[3px] font-semibold">TM</p>
+            </div>
+            <div className="relative top-6">
+              <div className="w-52 h-[153px] left-0 top-[77px] absolute bg-amber-200 rounded-full blur-[100px]" />
+              <div className="w-52 h-[153px] left-[33px] top-0 absolute bg-rose-500 rounded-full blur-[100px]" />
+            </div>
+            <div className="pl-5">
+              <nav class="flex gap-5">
+                <h1 class="text-rose-500 text-xl font-bold font-['Clash Display'] capitalize leading-relaxed">
+                  home
+                </h1>
+                <h1 class="text-black text-xl font-medium font-['Clash Display'] capitalize leading-relaxed">
+                  about us
+                </h1>
+                <h1 class="text-black text-xl font-medium font-['Clash Display'] capitalize leading-relaxed">
+                  pricing
+                </h1>
+                <h1 class="text-black text-xl font-medium font-['Clash Display'] capitalize leading-relaxed">
+                  features
+                </h1>
+              </nav>
+            </div>
+          </div>
+          <div className="w-[180px] h-[60px] bg-black rounded flex justify-center items-center mr-6">
+            <button class=" text-white text-lg font-medium font-['Clash Display'] capitalize leading-7">
+              download
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="md:hidden z-50">
-        {navbar ? (
-          <AiOutlineClose
-            size={25}
-            onClick={() => {
-              setNavbar(!navbar);
-            }}
+        <Image
+            src={star}
+            className="w-10  absolute bottom-0 right-10 opacity-80"
+            alt="logo"
           />
-        ) : (
+        <div className="md:hidden z-50">
+          {navbar ? (
+            <AiOutlineClose
+              size={25}
+              onClick={() => {
+                setNavbar(!navbar);
+              }}
+            />
+          ) : (
+            <Image
+              onClick={() => {
+                setNavbar(!navbar);
+              }}
+              src={Burgermenu}
+              className="w-7 cursor-pointer"
+              alt="burger"
+            />
+          )}
           <Image
-            onClick={() => {
-              setNavbar(!navbar);
-            }}
-            src={Burgermenu}
-            className="w-7 cursor-pointer"
-            alt="burger"
+            src={star}
+            className="w-10  absolute top-5 right-10 opacity-50"
+            alt="logo"
           />
-        )}
-        <Image src={star} className="w-10  absolute top-5 right-10 opacity-50" alt="logo"/>
-      </div>
-      <nav ref={navRef}
-        className={`fixed top-0  right-0  w-2/3  h-full bg-[#fffff]  transform ${
-          navbar ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out   md:static md:bg-transparent md:flex md:transform-none md:transition-none`}
-      >
+        </div>
+        {/* <nav ref={navRef} className={`fixed top-0  right-0  w-2/3  h-full bg-[#fffff]  transform ${ navbar ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out   md:static md:bg-transparent md:flex md:transform-none md:transition-none`}>
         <ul className="flex flex-col items-center justify-center md:flex-row md:h-auto">
           <li className="p-4 text-rose-500 text-xl font-bold font-['ClashDisplay'] capitalize leading-relaxed">
             Home
@@ -83,9 +116,9 @@ function Header() {
             </button>
           </div>
         </ul>
-      </nav>
-    </header>
-  </>
+      </nav> */}
+      </header>
+    </>
   );
 }
 
