@@ -1,12 +1,10 @@
 import React from "react";
-import BgGrident from "./BgGrident";
-import onhold from "../../public/Image/On Hold.png";
 import Image from "next/image";
 import star from "../../public/Image/Star 1.png";
 
 function Feature() {
   return (
-    <div className=" lg:min-h-screen bg-[#F2F2F2]">
+    <section className=" lg:min-h-screen bg-[#F2F2F2]">
       <div className="flex justify-around  flex-col lg:flex-row items-center pl-10 pr-10">
         <div>
           <img
@@ -73,6 +71,7 @@ function Feature() {
             </h1>
           </div>
         </div>
+        {/* gradient */}
         <div className="relative left-0   top-5 ">
           <div className="w-[290px] h-[153px] right-5 top-[77px] absolute bg-amber-200 rounded-full blur-[100px]"></div>
           <div className="w-[284px] h-[153px] right-5 top-0 absolute bg-rose-500 rounded-full blur-[100px]"></div>
@@ -80,9 +79,6 @@ function Feature() {
       </div>
       <div className="flex justify-around  flex-col lg:flex-row-reverse items-center pl-10  ">
         <div className="">
-          {/* <div className="absolute flex justify-center items-center  bg-red-300">
-            <Image src={onhold} className="w-[201px]  " />
-          </div> */}
           <img
             src="https://webd-assignment-1.vercel.app/assets/images/features.svg"
             className="w-[600px] h-auto"
@@ -157,10 +153,9 @@ function Feature() {
               ac dolor neque lorem sapien, suspendisse aliquam.
             </h1>
           </div>
-      
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

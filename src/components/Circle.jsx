@@ -4,9 +4,10 @@ export default function Circle() {
   return (
     <>
       {" "}
-      <div class="w-[317px] h-[230px] relative">
-        <div class="w-[290px] h-[153px] left-0 top-[77px] absolute bg-amber-200 rounded-full blur-[100px]"></div>
-        <div class="w-[284px] h-[153px] left-[33px] top-0 absolute bg-rose-500 rounded-full blur-[100px]"></div>
+      <div class=" relative  top-0 bg-red-400">
+        <div class="w-[380px] h-[247px] left-0 top-[332.70px] absolute  -rotate-45 rounded-full border border-white"></div>
+        <div class="w-[380px] h-[247px] left-0 top-[300.70px] absolute  -rotate-45 rounded-full border border-white"></div>
+        <div class="w-[380px] h-[247px] left-0 top-[268.70px] absolute  -rotate-45 rounded-full border border-white"></div>
       </div>
     </>
   );

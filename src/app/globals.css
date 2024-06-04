@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    scrollbar-color: #8e8e8e #fff;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Clash Display', sans-serif;
 

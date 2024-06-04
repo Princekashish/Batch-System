@@ -5,9 +5,7 @@ import logo from "../../public/Image/Frame.png";
 import logotext from "../../public/Image/Vector.png";
 import Burgermenu from "../../public/Image/Group 40.png";
 import star from "../../public/Image/Star 1.png";
-
 import { AiOutlineClose } from "react-icons/ai";
-import BgGrident from "./BgGrident";
 
 function Header() {
   const [navbar, setNavbar] = useState(false);
@@ -29,10 +27,30 @@ function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [navbar]);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <header className="sticky top-0 bg-[#F2F2F2] flex justify-between items-center p-10 rounded-t-3xl ">
+      <header
+        className={`sticky top-0 bg-[#F2F2F2] flex justify-between items-center pl-10 pr-10 p-5 rounded-t-3xl z-10 ${
+          scrolled ? "shadow-lg" : ""
+        }`}
+      >
         <div className="flex justify-between w-full">
           <div className="flex items-center  z-10">
             <Image src={logo} className="w-10" alt="logo" />
@@ -46,32 +64,32 @@ function Header() {
             </div>
             <div className="pl-5">
               <nav class="flex gap-5">
-                <h1 class="text-rose-500 text-xl font-bold font-['Clash Display'] capitalize leading-relaxed">
+                <h1 class="text-rose-500 text-xl font-bold font-clash capitalize leading-relaxed">
                   home
                 </h1>
-                <h1 class="text-black text-xl font-medium font-['Clash Display'] capitalize leading-relaxed">
+                <h1 class="text-black text-xl font-medium font-clash capitalize leading-relaxed">
                   about us
                 </h1>
-                <h1 class="text-black text-xl font-medium font-['Clash Display'] capitalize leading-relaxed">
+                <h1 class="text-black text-xl font-medium font-clash capitalize leading-relaxed">
                   pricing
                 </h1>
-                <h1 class="text-black text-xl font-medium font-['Clash Display'] capitalize leading-relaxed">
+                <h1 class="text-black text-xl font-medium font-clash capitalize leading-relaxed">
                   features
                 </h1>
               </nav>
             </div>
           </div>
-          <div className="w-[180px] h-[60px] bg-black rounded flex justify-center items-center mr-6">
-            <button class=" text-white text-lg font-medium font-['Clash Display'] capitalize leading-7">
+          <div className="px-5 py-3 hover:bg-rose-600 absolute right-0  cursor-pointer z-10   bg-black rounded-xl flex justify-center items-center mr-6 hover:duration-500 ">
+            <button class=" text-white text-lg font-medium font-clash capitalize leading-7 ">
               download
             </button>
           </div>
         </div>
         <Image
-            src={star}
-            className="w-10  absolute bottom-0 right-10 opacity-80"
-            alt="logo"
-          />
+          src={star}
+          className="w-10  absolute bottom-[-30px] right-10 opacity-80"
+          alt="logo"
+        />
         <div className="md:hidden z-50">
           {navbar ? (
             <AiOutlineClose
@@ -96,27 +114,6 @@ function Header() {
             alt="logo"
           />
         </div>
-        {/* <nav ref={navRef} className={`fixed top-0  right-0  w-2/3  h-full bg-[#fffff]  transform ${ navbar ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out   md:static md:bg-transparent md:flex md:transform-none md:transition-none`}>
-        <ul className="flex flex-col items-center justify-center md:flex-row md:h-auto">
-          <li className="p-4 text-rose-500 text-xl font-bold font-['ClashDisplay'] capitalize leading-relaxed">
-            Home
-          </li>
-          <li className="p-4 text-black text-xl font-medium font-['ClashDisplay'] capitalize leading-relaxed">
-            About Us
-          </li>
-          <li className="p-4 text-black text-xl font-medium font-['ClashDisplay'] capitalize leading-relaxed">
-            Pricing
-          </li>
-          <li className="p-4 text-black text-xl font-medium font-['ClashDisplay'] capitalize leading-relaxed">
-            Features
-          </li>
-          <div className="w-[180px] shadow-lg h-[60px] bg-black rounded flex justify-center items-center">
-            <button className="w-full  text-white text-lg font-medium font-['ClashDisplay'] capitalize leading-7">
-              Download
-            </button>
-          </div>
-        </ul>
-      </nav> */}
       </header>
     </>
   );

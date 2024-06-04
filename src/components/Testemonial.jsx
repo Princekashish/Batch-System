@@ -4,15 +4,16 @@ import Image from "next/image";
 
 function Testemonial() {
   return (
-    <div className="min-h-screen bg-[#F2F2F2]">
+    <section className="min-h-screen bg-[#F2F2F2]">
       <div className="flex flex-col items-center justify-center gap-1">
+        {/* testimonial heading */}
         <h1 className="text-center text-black text-lg font-medium font-clash uppercase leading-7 tracking-[2.88px]">
           testimonial
         </h1>
         <h1 className=" text-center text-black text-5xl font-bold font-clash capitalize leading-[48px]">
           what our users <br /> say about us?
         </h1>
-
+        {/* testimonial start */}
         <div className="flex justify-around  flex-col lg:flex-row items-center pl-10 pr-10 ">
           <div className="">
             <img
@@ -37,8 +38,13 @@ function Testemonial() {
               </h1>
             </div>
             <div>
-                <img src="https://webd-assignment-1.vercel.app/assets/images/testimonials2.svg" alt="" />
-                <h1 className="text-black text-lg font-semibold font-clash capitalize leading-7">nick jonas</h1>
+              <img
+                src="https://webd-assignment-1.vercel.app/assets/images/testimonials2.svg"
+                alt=""
+              />
+              <h1 className="text-black text-lg font-semibold font-clash capitalize leading-7">
+                nick jonas
+              </h1>
             </div>
           </div>
 
@@ -47,7 +53,7 @@ function Testemonial() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

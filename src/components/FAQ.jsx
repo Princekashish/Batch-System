@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function FAQ() {
   return (
-    <div className="min-h-screen bg-[#F2F2F2]">
+    <section className="min-h-screen bg-[#F2F2F2]">
       <div className="flex justify-around flex-col gap-4">
         <div className="pl-24">
           <h1 className="text-rose-500 text-lg font-medium font-clash uppercase leading-7 tracking-[2.88px]">
@@ -76,7 +76,7 @@ function FAQ() {
             <Image src={star} className="bottom-5 relative left-11 opacity-50  h-10 w-10  " />
           </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,6 +1,6 @@
 "use client";
 
-import Downlode from "@/components/Downlode";
+import Banner from "@/components/Banner";
 import FAQ from "@/components/FAQ";
 import Feature from "@/components/Feature";
 import Hero from "@/components/Hero";
@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Feature/>
-      <Testemonial/>
-      <FAQ/>
-      <Downlode/>
+      <Feature />
+      <Testemonial />
+      <FAQ />
+      <Banner />
     </div>
   );
 }
