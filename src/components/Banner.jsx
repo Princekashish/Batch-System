@@ -9,10 +9,10 @@ import star from "../../public/Image/Star 1.png";
 
 function Banner() {
   return (
-    <section className="bg-[#F2F2F2] lg:h-[50vh] relative  flex justify-center items-center">
-      {" "}
+    <section className="bg-[#F2F2F2] lg:h-[50vh]  relative  flex justify-center items-center">
+ 
       <Image src={star} className="absolute left-28 opacity-90  h-10 w-10  " />
-      <div className="w-[1090px] relative overflow-hidden h-[405px] bg-black flex flex-col lg:flex-row justify-around items-center ">
+      <div className="lg:w-[1090px]  relative overflow-hidden lg:h-[405px] h-[90vh] bg-black flex flex-col lg:flex-row justify-around items-center ">
         {/* circle */}
         <div class="relative bottom-0 opacity-20 top-32  right-32 w-[390px] h-[300px]">
           <div class="w-[380px] h-[247px] left-0 top-[332.70px] absolute origin-top-left  -rotate-45 rounded-full border border-white"></div>
@@ -27,7 +27,7 @@ function Banner() {
           src={Star2}
           className="absolute top-8 right-40 opacity-90  h-10 w-10  "
         />
-        <div className="absolute left-10 flex flex-col lg:text-start gap-5 text-center  justify-center">
+        <div className="absolute lg:left-10 top-10 flex flex-col lg:text-start gap-5 text-center  justify-center">
           <div className="">
             <h1 className="text-white text-5xl font-bold font-clash capitalize leading-[48px]">
               ready to get started?
@@ -36,7 +36,7 @@ function Banner() {
               Risus habitant leo egestas mauris diam eget morbi tempus vulputate
             </h1>
           </div>
-          <div className=" w-[208px] gap-2 bg-white rounded  flex justify-center items-center hover:bg-red-500 hover:duration-500 hover:text-white cursor-pointer">
+          <div className=" w-[208px] gap-2 bg-white rounded relative left-16 lg:relative lg:left-0  flex justify-center items-center hover:bg-red-500 hover:duration-500 hover:text-white cursor-pointer">
             <button className=" px-5   py-3 flex justify-center items-center gap-2 text-lg font-medium font-clash capitalize leading-7 hover:text-white">
               download app <FaApple size={25} />
             </button>

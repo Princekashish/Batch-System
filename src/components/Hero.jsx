@@ -11,27 +11,27 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 function Hero() {
   return (
-    <div className="h-screen  bg-[#F2F2F2] ">
+    <div className="lg:h-screen  bg-[#F2F2F2] ">
       <Image
         src={star}
         className="absolute top-20 opacity-20  h-10 w-10 left-2 "
       />
-      <div className="flex justify-center items-center   p-20 ">
+      <div className="flex justify-center items-center   p-20 overflow-hidden">
         {/* heading */}
-        <div className=" flex flex-col justify-center items-start gap-5 z-10">
+        <div className=" flex flex-col justify-center items-start gap-5 ">
           <div>
-            <h1 className=" text-black  text-[64px] font-bold font-clash capitalize leading-[64px]">
+            <h1 className=" text-black  text-[64px] font-bold font-clash capitalize leading-[64px] ">
               make the best <br /> financial decisions
             </h1>
           </div>
           <div>
-            <p className="w-[638px] opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
+            <p className="lg:w-[638px] opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
               Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
               faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
             </p>
           </div>
-          <div className="flex items-center gap-10 ">
-            <div className=" px-5 py-2 bg-black rounded hover:bg-red-500 hover:duration-500 cursor-pointer">
+          <div className="flex items-center lg:gap-10 gap-2 ">
+            <div className=" px-5 lg:px-5 py-2 bg-black rounded hover:bg-red-500 hover:duration-500 cursor-pointer">
               <button className="text-white text-lg flex items-center gap-2 justify-center font-medium font-clash capitalize leading-7 ">
                 get start <IoIosArrowRoundForward size={25} />
               </button>
@@ -52,7 +52,7 @@ function Hero() {
           <img
             src="https://batch-system-ui-fry.vercel.app/dir/images/vnag-strap.png"
             alt=""
-            className="w-[490px] h-auto"
+            className="lg:w-[490px] lg:h-auto hidden lg:block"
           />
         </div>
         {/* gradient */}
@@ -61,7 +61,7 @@ function Hero() {
           <div className="w-[284px] h-[153px] left-[33px] top-0 absolute bg-rose-500 rounded-full blur-[100px]"></div>
         </div>
         {/* iphonepng */}
-        <div className=" w-1/2 ">
+        <div className="hidden lg:block w-1/2 ">
           <div className="absolute right-[4px] top-24  z-10">
             <Image src={iphone1} className="relative  " />
           </div>

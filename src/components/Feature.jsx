@@ -1,19 +1,20 @@
 import React from "react";
 import Image from "next/image";
 import star from "../../public/Image/Star 1.png";
+// [#F2F2F2]
 
 function Feature() {
   return (
-    <section className=" lg:min-h-screen bg-[#F2F2F2]">
-      <div className="flex justify-around  flex-col lg:flex-row items-center pl-10 pr-10">
+    <section className=" lg:min-h-screen bg-[#F2F2F2] ">
+      <div className="flex justify-around  flex-col lg:flex-row items-center lg:pl-10 lg:pr-10 p-10">
         <div>
           <img
             src="https://webd-assignment-1.vercel.app/assets/images/features.svg"
-            className="w-[600px] h-auto"
+            className="lg:w-[600px] w-[750px] h-auto"
             alt=""
           />
         </div>
-        <div className="flex flex-col justify-start items-start gap-5  w-1/2 ">
+        <div className="flex flex-col  justify-center lg:justify-start items-start gap-5  lg:w-1/2 w-full">
           <div class="text-start">
             <h1 class=" text-rose-500 text-lg font-medium font-clash uppercase leading-7 tracking-[2.88px]">
               features
@@ -33,7 +34,7 @@ function Feature() {
                 budgeting intervals
               </h1>
             </div>
-            <h1 className="w-[638px] opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[638px]  opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
               Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
               faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
             </h1>
@@ -49,7 +50,7 @@ function Feature() {
                 budgeting intervals
               </h1>
             </div>
-            <h1 className="w-[638px] opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[638px] opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
               Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
               faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
             </h1>
@@ -65,7 +66,7 @@ function Feature() {
                 budgeting intervals
               </h1>
             </div>
-            <h1 className="w-[638px] opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[638px] opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
               Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
               faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
             </h1>
@@ -85,7 +86,7 @@ function Feature() {
             alt=""
           />
         </div>
-        <div className="flex flex-col    justify-center items-start gap-5  w-1/2 ">
+        <div className="flex flex-col  justify-center lg:justify-start items-start gap-5  lg:w-1/2 w-full">
           <div class="text-start">
             <h1 class="text-rose-500 text-lg font-medium font-clash uppercase leading-7 tracking-[2.88px]">
               advatnages
@@ -133,7 +134,7 @@ function Feature() {
             alt=""
           />
         </div>
-        <div className="flex flex-col justify-start items-start gap-5  w-1/2 ">
+        <div className="flex flex-col  justify-start items-start gap-5  lg:w-1/2 ">
           <div>
             <div className="flex gap-2 items-center ">
               <img
@@ -145,7 +146,7 @@ function Feature() {
                 fully customizable
               </h1>
             </div>
-            <h1 className="w-[562px] pt-2 opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[562px]  pt-2 opacity-50 text-black text-lg font-medium font-clash capitalize leading-7">
               Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
               ultricies. In ultrices malesuada elit mauris etiam odio. Duis
               tristique lacus, et blandit viverra nisl velit. Sed mattis

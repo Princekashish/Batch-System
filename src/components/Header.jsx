@@ -47,7 +47,7 @@ function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 bg-[#F2F2F2] flex justify-between items-center pl-10 pr-10 p-5 rounded-t-3xl z-10 ${
+        className={`sticky top-0 bg-[#F2F2F2] flex justify-between items-center pl-10 pr-10 p-5 rounded-t-3xl lg:z-10  ${
           scrolled ? "shadow-lg" : ""
         }`}
       >
@@ -62,7 +62,7 @@ function Header() {
               <div className="w-52 h-[153px] left-0 top-[77px] absolute bg-amber-200 rounded-full blur-[100px]" />
               <div className="w-52 h-[153px] left-[33px] top-0 absolute bg-rose-500 rounded-full blur-[100px]" />
             </div>
-            <div className="pl-5">
+            <div className="pl-5 hidden lg:block">
               <nav class="flex gap-5">
                 <h1 class="text-rose-500 text-xl font-bold font-clash capitalize leading-relaxed">
                   home
@@ -77,13 +77,14 @@ function Header() {
                   features
                 </h1>
               </nav>
-            </div>
-          </div>
-          <div className="px-5 py-3 hover:bg-rose-600 absolute right-0  cursor-pointer z-10   bg-black rounded-xl flex justify-center items-center mr-6 hover:duration-500 ">
+              <div className="px-5 py-3 hover:bg-rose-600 absolute right-10  top-5 cursor-pointer z-10   bg-black rounded-xl flex justify-center items-center mr-6 hover:duration-500 ">
             <button class=" text-white text-lg font-medium font-clash capitalize leading-7 ">
               download
             </button>
           </div>
+            </div>
+          </div>
+       
         </div>
         <Image
           src={star}

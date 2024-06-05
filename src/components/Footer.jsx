@@ -6,9 +6,9 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 function Footer() {
   return (
-    <div className="bg-[#F2F2F2] h-[40vh] font-clash">
+    <div className="bg-[#F2F2F2] lg:h-[40vh] h-screen font-clash">
       <footer className="flex   flex-col justify-center items-center">
-        <div className="p-10 flex justify-between w-[1091px]">
+        <div className="p-10  w-full flex lg:justify-between flex-col gap-3 lg:gap-0 lg:flex-row lg:w-[1091px] justify-center items-center">
           <div className="flex  items-start justify-center  flex-col gap-5">
             <div className="flex  items-start">
               <Image src={Logo} className="w-[117px]" alt="logo text" />
@@ -46,7 +46,7 @@ function Footer() {
               <li className="pt-2">reveiws</li>
             </ul>
           </div>
-          <div className="flex items-start justify-center flex-col gap-5">
+          <div className="flex lg:items-start justify-center items-center flex-col gap-5">
             <h1 className="text-center text-black text-[32px] font-medium font-clash capitalize leading-[42px]">
               News Letters
             </h1>
@@ -56,7 +56,7 @@ function Footer() {
             <div className=" flex justify-center items-center">
               <input
                 type="text"
-                className="outline-none px-5 py-3 text-start rounded-l-xl"
+                className="outline-none  lg:px-5 py-3  text-start rounded-l-xl"
                 required
               />
               <button className=" bg-black px-3 py-3 text-white  rounded-r-xl">
@@ -65,8 +65,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-[1090px] h-[104px] flex justify-center items-center gap-5  border-t border-neutral-900 ">
-          <h1 className=" text-black text-base font-medium font-['Clash Display'] capitalize leading-relaxed tracking-wider">
+        <div className="lg:w-[1090px] h-[104px] flex justify-center items-center gap-5  border-t border-neutral-900 ">
+          <h1 className=" text-black text-base font-medium font-clash capitalize leading-relaxed tracking-wider">
             Copyright 2024 uifry.com all rights reserved
           </h1>
         </div>
