@@ -58,7 +58,7 @@ function Header() {
               <Image src={logotext} className="w-16" alt="logo text" />
               <p className="text-[6px] relative top-[3px] font-semibold">TM</p>
             </div>
-            <div className="relative top-6">
+            <div className="relative top-6 hidden lg:block">
               <div className="w-52 h-[153px] left-0 top-[77px] absolute bg-amber-200 rounded-full blur-[100px]" />
               <div className="w-52 h-[153px] left-[33px] top-0 absolute bg-rose-500 rounded-full blur-[100px]" />
             </div>

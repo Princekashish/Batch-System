@@ -7,7 +7,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 function Footer() {
   return (
     <div className="bg-[#F2F2F2] lg:h-[40vh] h-screen font-clash">
-      <footer className="flex   flex-col justify-center items-center">
+      <footer className="flex   flex-col justify-center items-center ">
         <div className="p-10  w-full flex lg:justify-between flex-col gap-3 lg:gap-0 lg:flex-row lg:w-[1091px] justify-center items-center">
           <div className="flex  items-start justify-center  flex-col gap-5">
             <div className="flex  items-start">

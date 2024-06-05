@@ -16,57 +16,62 @@ function FAQ() {
           </h1>
         </div>
         {/* comments */}
-        <div className="pt-10 flex flex-wrap justify-around gap-10">
-          <div className="h-[181px] lg:w-[535px] bg-rose-500 rounded-xl flex flex-col justify-center items-center">
-            <h1 className="lg:w-[474px] text-white text-[28px] font-semibold font-clash capitalize leading-7">
+        <div className="pt-10 flex flex-wrap justify-around gap-10 ">
+        {/* co1 */}
+          <div className="h-[181px]  lg:w-[535px] bg-rose-500 p-5 rounded-xl flex flex-col justify-center items-center">
+            <h1 className="lg:w-[474px] text-white text-base lg:text-[28px] font-semibold font-clash capitalize leading-7">
               the best financial accounting app ever!
             </h1>
-            <h1 className="lg:w-[466px] text-justify text-white text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[466px] text-justify text-white text-sm lg:text-lg font-medium font-clash capitalize leading-7">
               “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
               ultricies. In ultrices malesuada elit mauris.
             </h1>
           </div>
-          <div className="h-[181px] lg:w-[535px] bg-[#F2F2F2] rounded-xl flex flex-col justify-center items-center">
-            <h1 className="lg:w-[474px]  text-[28px] font-semibold font-clash capitalize leading-7">
+
+
+
+
+          <div className="p-5 h-[181px] lg:w-[535px] bg-[#F2F2F2] rounded-xl flex flex-col justify-center items-center">
+            <h1 className="lg:w-[474px]  text-[28px] text-base lg:text-[28px] font-semibold font-clash capitalize leading-7">
               the best financial accounting app ever!
             </h1>
-            <h1 className="lg:w-[466px] text-justify  text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[466px] text-justify text-sm lg:text-lg   font-medium font-clash capitalize leading-7">
               “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
               ultricies. In ultrices malesuada elit mauris.
             </h1>
           </div>
-          <div className="h-[181px] lg:w-[535px] bg-[#F2F2F2] rounded-xl flex flex-col justify-center items-center">
-            <h1 className="lg:w-[474px]  text-[28px] font-semibold font-clash capitalize leading-7">
+          <div className="p-5 h-[181px] lg:w-[535px] bg-[#F2F2F2] rounded-xl flex flex-col justify-center items-center">
+            <h1 className="lg:w-[474px]  text-base lg:text-[28px] font-semibold font-clash capitalize leading-7">
               the best financial accounting app ever!
             </h1>
-            <h1 className="lg:w-[466px] text-justify  text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[466px] text-justify   text-sm lg:text-lg font-medium font-clash capitalize leading-7">
               “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
               ultricies. In ultrices malesuada elit mauris.
             </h1>
           </div>
-          <div className="h-[181px] lg:w-[535px] bg-rose-500 rounded-xl flex flex-col justify-center items-center">
-            <h1 className="lg:w-[474px] text-white   text-[28px] font-semibold font-clash capitalize leading-7">
+          <div className="p-5 h-[181px] lg:w-[535px] bg-rose-500 rounded-xl flex flex-col justify-center items-center">
+            <h1 className="lg:w-[474px] text-white   text-base lg:text-[28px] font-semibold font-clash capitalize leading-7">
               the best financial accounting app ever!
             </h1>
-            <h1 className="lg:w-[466px] text-justify text-white  text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[466px] text-justify text-white  text-sm lg:text-lg font-medium font-clash capitalize leading-7">
               “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
               ultricies. In ultrices malesuada elit mauris.
             </h1>
           </div>
-          <div className="h-[181px] lg:w-[535px] bg-rose-500 rounded-xl flex flex-col justify-center items-center">
-            <h1 className="lg:w-[474px] text-white text-[28px] font-semibold font-clash capitalize leading-7">
+          <div className="p-5 h-[181px] lg:w-[535px] bg-rose-500 rounded-xl flex flex-col justify-center items-center">
+            <h1 className="lg:w-[474px] text-white text-base lg:text-[28px] font-semibold font-clash capitalize leading-7">
               the best financial accounting app ever!
             </h1>
-            <h1 className="lg:w-[466px] text-justify text-white text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[466px] text-justify text-white text-sm lg:text-lg font-medium font-clash capitalize leading-7">
               “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
               ultricies. In ultrices malesuada elit mauris.
             </h1>
           </div>
-          <div className="h-[181px] lg:w-[535px] bg-[#F2F2F2] rounded-xl flex flex-col justify-center items-center">
-            <h1 className="lg:w-[474px]  text-[28px] font-semibold font-clash capitalize leading-7">
+          <div className="p-5 h-[181px] lg:w-[535px] bg-[#F2F2F2] rounded-xl flex flex-col justify-center items-center">
+            <h1 className="lg:w-[474px]  text-base lg:text-[28px] font-semibold font-clash capitalize leading-7">
               the best financial accounting app ever!
             </h1>
-            <h1 className="lg:w-[466px] text-justify  text-lg font-medium font-clash capitalize leading-7">
+            <h1 className="lg:w-[466px] text-justify  text-sm lg:text-lg font-medium font-clash capitalize leading-7">
               “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
               ultricies. In ultrices malesuada elit mauris.
             </h1>

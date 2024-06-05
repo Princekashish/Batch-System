@@ -27,7 +27,7 @@ function Banner() {
           src={Star2}
           className="absolute top-8 right-40 opacity-90  h-10 w-10  "
         />
-        <div className="absolute lg:left-10 top-10 flex flex-col lg:text-start gap-5 text-center  justify-center">
+        <div className=" absolute lg:left-10 top-10 flex flex-col lg:text-start gap-5 text-center  justify-center">
           <div className="">
             <h1 className="text-white text-5xl font-bold font-clash capitalize leading-[48px]">
               ready to get started?
